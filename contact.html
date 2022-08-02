@@ -8,7 +8,7 @@
     Document Title
     =============================================
     -->
-    <title>Titan | Multipurpose HTML5 Template</title>
+    <title>Hambler | One Stop Destination</title>
     <!--  
     Favicons
     =============================================
@@ -44,11 +44,9 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/et-line-font.css" rel="stylesheet">
-    <link href="assets/css/flexslider.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
-    <link href="assets/css/simpletextrotator.css" rel="stylesheet">
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/default.css" rel="stylesheet">
@@ -108,11 +106,10 @@
         <nav class="navbar navbar-custom navbar-fixed-top navbar-fixed-top one-page" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index1.html">Hambler</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Hambler</a>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#totop">Home</a></li>
               <li class="dropdown"><a class="dropdown-toggle" href="#services" data-toggle="dropdown">Kitchen Appliances</a>
                 <ul class="dropdown-menu">
                   <li><a href="#">MG</a></li>
@@ -145,39 +142,39 @@
                         <li><a href="#">Digital</a></li>
                     </ul>
                 </li>
-                <li><a class="section-scroll" href="about.html">About us </a></li>
-                <li><a class="section-scroll" href="#news">Blogs </a></li>
+                <li><a class="section-scroll" href="support.html">Support</a></li>
                 <li><a class="section-scroll" href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
         </nav>
         
-        <section class="home-section home-full-height bg-dark bg-gradient" id="home" data-background="assets/image/1615386.jpg">
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-            <div class="font-alt mb-40 titan-title-size-4">We are Hambler</div><a class="section-scroll btn btn-border-w btn-round" href="#">Learn More</a>
-          </div>
-        </div>
-      </section>
-        
-        
-            <section class="module" id="news">
+
+        <section class="module bg-dark-60 about-page-header" data-background="assets/image/contact-us-banner.png">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Get In Touch</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+                <div class="font-alt mb-30 titan-title-size-3">Hello &amp; welcome</div>
+                <div class="font-alt mb-40 titan-title-size-2">Come to us or ask a question right now.</div>
               </div>
             </div>
+          </div>
+        </section>
+        
+        
+        <section id="get-in-touch">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="module-title font-alt">Get In Touch</h2>
+                    <div class="module-subtitle font-serif">Come to us or ask a question right now.</div>
+                </div>
             </div>
-          </section>  
+        </section> 
 
       <div class="main">
       <section id="contact">
           <div style="width: 100%">
-              <iframe frameborder="0" height="700px" id="google-map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=650&amp;hl=en&amp;coord=28.9208533,-1.7853818&amp;ie=UTF8&amp;t=&amp;z=14&amp;output=embed&amp;iwloc=near" width="100%"></iframe>
+              <iframe id="google-map" width="100%" height="650px" src="https://maps.google.com/maps?width=100%&amp;height=650&amp;hl=en&amp;coord=28.619148061261672,77.22551822662354&amp;q=east%20delhi%2C%20india+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;output=embed&iwloc=near" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
           <div class="container-wrapper">
             <div class="container">
@@ -187,24 +184,26 @@
                             <h3>Contact Info</h3>
 
                             <address>
-                              <strong>Twitter, Inc.</strong><br>
-                              795 Folsom Ave, Suite 600<br>
-                              San Francisco, CA 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                                <strong>Hambler, (P) Ltd.</strong><br/>
+                                Patparganj Industrial Area <br/>
+                                Delhi, IN 110091 <br/>
+                                <abbr title="Phone">P:</abbr> (011) 456-7890<br/>
+                                <abbr title="Mobile">P:</abbr> (+91) 9800000000<br/>
+                                <abbr title="Email">P:</abbr> Info@Hambler.in<br/>
                             </address>
 
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <form id="main-contact-form" name="contact-form" onsubmit="sendemail(); reset(); return false;">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    <input type="text" id="email" name="subject" class="form-control" placeholder="Subject" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                    <textarea id="message" name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Send Message</button>
                             </form>
@@ -213,139 +212,107 @@
                 </div>
             </div>
         </div>
+  
+          </section><!--/#bottom-->
           
-          <script type="text/javascript">
-              Email.send({
-                  Host : "smtp.yourisp.com",
-                  Username : "username",
-                  Password : "password",
-                  To : 'them@website.com',
-                  From : "you@isp.com",
-                  Subject : "This is the subject",
-                  Body : "And this is the body"
-              }).then(message => alert(message));
-          </script>
-          
-          
-    </section><!--/#bottom-->
-           <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-
-                            
-
-                
-                <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Important Links</h5>
-                    <div class="widget-posts-title"><a href="#">About US</a></div>
-                    <div class="widget-posts-title"><a href="#">Privacy Policy</a></div>
-                    <div class="widget-posts-title"><a href="#">Terms & Conditions</a></div>
-                    <div class="widget-posts-title"><a href="#">Frequently Asked Questions</a></div>
-                    <div class="widget-posts-title"><a href="#">Contact Us</a></div>
-                    
-                    
-                </div>
+        <section id="footer">
+          <div class="module-small bg-dark">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <div class="widget">
+                              <h5 class="widget-title font-alt">Important Links</h5>
+                              <div class="widget-posts-title"><a href="about.html">About US</a></div>
+                              <div class="widget-posts-title"><a href="privacy.html">Privacy Policy</a></div>
+                              <div class="widget-posts-title"><a href="tandc.html">Terms & Conditions</a></div>
+                              <div class="widget-posts-title"><a href="faq.html">Frequently Asked Questions</a></div>
+                              <div class="widget-posts-title"><a href="contact.html">Contact Us</a></div>
+                          </div>
+                      </div>
+                      <div class="col-sm-9">
+                          <div class="widget">
+                              <h5 class="widget-title font-alt">HAMBLER AVAILABLE ON</h5>
+                              <div class="container">
+                                  <div class="row client">
+                                      <div class="owl-carousel text-center" data-items="6" data-pagination="false" data-navigation="false">
+                                          <div class="owl-item">
+                                              <div class="col-sm-12">
+                                                  <div class="client-logo"><img src="assets/image/footer/client-logo-1.svg" alt="Client Logo"/></div>
+                                              </div>
+                                          </div>
+                                          <div class="owl-item">
+                                              <div class="col-sm-12">
+                                                  <div class="client-logo"><img src="assets/image/footer/client-logo-2.svg" alt="Client Logo"/></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-                
-                <div class="col-sm-9">
-                    <div class="widget">                  <h5 class="widget-title font-alt">HAMBLER AVAILABLE ON</h5>
-
-<div class="container">
-            <div class="row client">
-              <div class="owl-carousel text-center" data-items="6" data-pagination="false" data-navigation="false">
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-1.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-2.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-3.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-4.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-5.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-1.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-2.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-3.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/image/client-logo-4.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-                    
-                    
-                </div>
+          <hr class="divider-d">
+          <footer class="footer bg-dark">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <p class="copyright font-alt">&copy; 2022
+                              <script type="text/javascript"> var today = new Date(); y0 = today.getFullYear(); if(y0>2022) { document.write('-'); document.write(y0); } </script>
+                              <a href="index.html">HAMBLER</a>, All Rights Reserved</p>
+                      </div>
+                      <div class="col-sm-6">
+                          <div class="footer-social-links">
+                              <a href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                              <a href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                              <a href="#">
+                                  <i class="fa fa-dribbble"></i>
+                              </a>
+                              <a href="#">
+                                  <i class="fa fa-skype"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
               </div>
-
-                
-            </div>
-          </div>
-        </div>
-        <hr class="divider-d">
-        <footer class="footer bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2022
-                    <script type="text/javascript"> var today = new Date(); y0 = today.getFullYear(); if(y0>2022) { document.write('-'); document.write(y0); } </script>
-                    <a href="index.html">hAMBLER</a>, All Rights Reserved</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    </main>
+          </footer>
+        </section>
+    </div>
+       
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+      </main>
     <!--  
     JavaScripts
     =============================================
     -->
+      
+              <script type="text/javascript">
+             function sendemail(){
+                 Email.send({
+                     Host : "smtp.gmail.com",
+                  Username : "username",
+                  Password : "password",
+                  To : 'info@hambler.in',
+                  From : document.getElementById("email").value,
+                  Subject : document.getElementById("subject").value,
+                  Body : document.getElementById("message").value 
+              }).then(message => alert(message));
+             }
+          </script>
+      
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/js/isotope.pkgd.js"></script>
     <script src="assets/js/imagesloaded.pkgd.js"></script>
-    <script src="assets/js/jquery.flexslider.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/jquery.magnific-popup.js"></script>
     <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
 </script>

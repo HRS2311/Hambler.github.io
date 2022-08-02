@@ -47,6 +47,7 @@ a,
 }
 
 .client-logo,
+.app-logo,
 .gallery-caption,
 .gallery-image:after,
 .gallery-image img,
@@ -1606,6 +1607,7 @@ Google map
 .team-item {
   position: relative;
   text-align: center;
+  padding-top: 20px;
 }
 
 .team-image {
@@ -2469,11 +2471,13 @@ Google map
 /*--------------------------------------------------------------
 	Client
 --------------------------------------------------------------*/
-.client-logo {
+.client-logo,
+.app-logo{
   opacity: .5;
 }
 
-.client-logo:hover {
+.client-logo:hover,
+.app-logo:hover{
   opacity: 1;
 }
 
