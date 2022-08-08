@@ -47,60 +47,144 @@
 	<link href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/css/et-line-font.css" rel="stylesheet">
     <link href="assets/css/flexslider.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <link href="assets/css/simpletextrotator.css" rel="stylesheet">
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+      <style>
+          #custom-collapse li
+          {
+            font-size: 12px;
+            font-family: 'Roboto';
+          }
+          #widget .widget-posts-title a
+          {
+              font-size: 15px;
+              font-family: 'Roboto';
+          }
+          
+          .icon-bar 
+          {
+              position: fixed;
+              top: 20%;
+              left: 100%;
+              transform: translateY(-50%);
+              -webkit-transform: translateY(50%);
+              -ms-transform: translateY(-50%);
+              z-index: 10;
+          }
+          
+          .download 
+          {
+              text-decoration: none;
+              width: 210px;
+              background:transparent;
+              color: red;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              padding: 4px;
+              font-size: 16px;
+              transform: translateX(-170px);
+              -webkit-transform: translateX(-60px);
+              -ms-transform: translateX(-60px);
+              transition: all 0.5s linear;
+              -webkit-transition: all 0.5s linear;
+              -ms-transition: all 0.5s linear;
+              border-radius: 25px;
+              border-color: red;
+              border-width: 1px;
+              border-style: solid;
+              font-family: cursive;
+          }
+          
+          .download i 
+          {
+              padding: 0 20px 0 20px;
+              color: red;
+              font-size: 30px !important;
+              animation: letszoom 3s linear alternate-reverse infinite;
+          }
+          
+          @keyframes letszoom
+          {
+              from 
+              { 
+                  transform: scale(0.8); 
+              }
+              to 
+              { 
+                  transform: scale(1); 
+              }
+          }
+          
+          .download:hover 
+          {
+              color: red;
+              transform: translateX(1);
+              -webkit-transform: translateX(-170px);
+              -ms-transform: translateX(-170px);
+          }
+      </style>
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
+      <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Hambler</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Hambler</a>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a class="dropdown-toggle" href="#services" data-toggle="dropdown">Kitchen Appliances</a>
+              <li><a class="section-scroll" href="about.html">About Us</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#services" data-toggle="dropdown">Products</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">MG</a></li>
-                  <li><a href="#">JMG</a></li>
-                  <li><a href="#">Chopper</a></li>
-                  <li><a href="#">Blender</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Sandwich</a>
-                      <ul class="dropdown-menu">
-                          <li><a href="#">Toaster</a></li>
-                          <li><a href="#">Griller</a></li>
-                          <li><a href="#">Jumbo</a></li>
-                      </ul>
+                    <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Kitchen Appliances</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">MG</a></li>
+                            <li><a href="#">JMG</a></li>
+                            <li><a href="#">Chopper</a></li>
+                            <li><a href="#">Blender</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sandwich</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Toaster</a></li>
+                                    <li><a href="#">Griller</a></li>
+                                    <li><a href="#">Jumbo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">OTG</a></li>
+                            <li><a href="#">Egg Boiler</a></li>
+                            <li><a href="#">Barbeque</a></li>
+                            <li><a href="#">Induction</a></li>
+                            <li><a href="#">Electric Kettle</a></li>
+                        </ul>
                     </li>
-                    <li><a href="#">OTG</a></li>
-                    <li><a href="#">Egg Boiler</a></li>
-                    <li><a href="#">Barbeque</a></li>
-                    <li><a href="#">Induction</a></li>
-                    <li><a href="#">Electric Kettle</a></li>
+                    <li><a class="section-scroll" href="#">Ceiling Fans</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Home Appliances </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Heaters</a></li>
+                        </ul>
+                    </li>
+                    <li><a lass="section-scroll" href="#">GPS</a></li>
                   </ul>
                 </li>
-                <li><a class="section-scroll" href="#works">Ceiling Fans</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="#alt-features" data-toggle="dropdown">Home Appliances </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Heaters</a></li>
-                    </ul>
-                </li>
-               <li class="dropdown"><a class="dropdown-toggle" href="#team"  data-toggle="dropdown">Bottles</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Stainless Steel</a></li>
-                        <li><a href="#">Digital</a></li>
-                    </ul>
-                </li>
                 <li><a class="section-scroll" href="support.html">Support</a></li>
+                                <li><a class="section-scroll" href="joinus.html">Partner Us</a></li>
+                                <li><a class="section-scroll" href="career.html">Career</a></li>
                 <li><a class="section-scroll" href="contact.html">Contact</a></li>
               </ul>
             </div>
@@ -116,6 +200,15 @@
       </section>
         
       <div class="main">
+          
+          		<div class="icon-bar">
+			<a href='#' class="download" target='_blank'>
+				<i class=" fa fa-file-download"></i> Download Catlogue
+			</a>
+		</div>
+          
+          
+          
           <!-- Trending Products -->
           
           <section class="module">
@@ -127,7 +220,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="owl-carousel text-center" data-items="5" data-pagination="false" data-navigation="false">
+    
+              <div id="owl-demo" class="owl-carousel text-center">
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="ex-product"><a href="#"><img src="assets/image/products/product-1.jpg" alt="Leather belt"/></a>
@@ -163,16 +257,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="ex-product"><a href="#"><img src="assets/image/products/product-6.jpg" alt="Leather belt"/></a>
-                      <h4 class="shop-item-title font-alt"><a href="#">Leather belt</a></h4><b style="color:red;">MRP:&nbsp&#8377;100.00/-</b>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
+        </div>
         </section>
           <!-- Trending Products -->
           
@@ -206,7 +293,7 @@
             <div class="row">
               <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="fa fa-daimond"></span></div>
+                  <div class="alt-features-icon"><span class="fa fa-gem"></span></div>
                   <h3 class="alt-features-title font-alt">Values</h3> Purley Ethical Business and Human Value.
                 </div>
                 <div class="alt-features-item">
@@ -214,11 +301,11 @@
                   <h3 class="alt-features-title font-alt">Quality</h3> Unique premium product quality with unmatchable price.
                 </div>
                 <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="fa fa-headphone"></span></div>
+                  <div class="alt-features-icon"><span class="fab fa-servicestack"></span></div>
                   <h3 class="alt-features-title font-alt">Service</h3> Delightful Customer Service and Experience will create difference.
                 </div>
                 <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="fa fa-list"></span></div>
+                  <div class="alt-features-icon"><span class="fa fa-clipboard-list"></span></div>
                   <h3 class="alt-features-title font-alt">Policy</h3> Flexible Channel and Business partner policy.
                 </div>
               </div>
@@ -227,16 +314,16 @@
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="fa fa-money"></span></div>
+                  <div class="alt-features-icon"><span class="fa fa-money-bill-wave"></span></div>
                   <h3 class="alt-features-title font-alt">Return</h3> Assured sustainable ROI for our valuable business partner .
                 </div>
                 <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="fab fa-react"></span></div>
+                  <div class="alt-features-icon"><span class="fa fa-bullhorn"></span></div>
                   <h3 class="alt-features-title font-alt">Marketing</h3> Demographic specific aggressive marketing and sales plan.
                 </div>
                 <div class="alt-features-item">
                   <div class="alt-features-icon"><span class="fa fa-user"></span></div>
-                  <h3 class="alt-features-title font-alt">Poeple</h3> Employee Development with elevated career path based on performance.
+                  <h3 class="alt-features-title font-alt">People</h3> Employee Development with elevated career path based on performance.
                 </div>
               </div>
             </div>
@@ -350,7 +437,7 @@
                   <div class="post-thumbnail"><a href="#"><img src="assets/image/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
                   <div class="post-header font-alt">
                     <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 1 August | 0 Comments
                     </div>
                   </div>
                   <div class="post-entry">
@@ -364,7 +451,7 @@
                   <div class="post-thumbnail"><a href="#"><img src="assets/image/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
                   <div class="post-header font-alt">
                     <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 3 August | 4 Comments
                     </div>
                   </div>
                   <div class="post-entry">
@@ -378,7 +465,7 @@
                   <div class="post-thumbnail"><a href="#"><img src="assets/image/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
                   <div class="post-header font-alt">
                     <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 August | 15 Comments
                     </div>
                   </div>
                   <div class="post-entry">
@@ -392,27 +479,27 @@
         </section>
         
         <!-- Blog Ends -->
-
+        </div>
         <div class="module-small bg-dark">
           <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                <div class="widget">
+                <div class="widget" id="widget">
                   <h5 class="widget-title font-alt">Important Links</h5>
                     <div class="widget-posts-title"><a href="about.html">About Us</a></div>
-                    <div class="widget-posts-title"><a href="#">Privacy Policy</a></div>
-                    <div class="widget-posts-title"><a href="#">Terms & Conditions</a></div>
-                    <div class="widget-posts-title"><a href="support.html">Support</a></div>
-                    <div class="widget-posts-title"><a href="support.html">Product Registration</a></div>                    
-                    <div class="widget-posts-title"><a href="#">Frequently Asked Questions</a></div>
+                    <div class="widget-posts-title"><a href="privacy.html">Privacy Policy</a></div>
+                    <div class="widget-posts-title"><a href="tnc.html">Terms & Conditions</a></div>
+                    <div class="widget-posts-title"><a href="support.html#support">Support</a></div>
+                    <div class="widget-posts-title"><a href="support.html#p_reg">Product Registration</a></div>                    
+                    <div class="widget-posts-title"><a href="faq.html">Frequently Asked Questions</a></div>
                     <div class="widget-posts-title"><a href="contact.html">Contact Us</a></div> 
                 </div>
               </div>
             <div class="col-sm-3">
-                <div class="widget">
+                <div class="widget" id="widget">
                   <h5 class="widget-title font-alt">Join Us</h5>
-                    <div class="widget-posts-title"><a href="#">Partner US</a></div>
-                    <div class="widget-posts-title"><a href="#">Career</a></div>
+                    <div class="widget-posts-title"><a href="partner.html">Partner US</a></div>
+                    <div class="widget-posts-title"><a href="careers.html">Career</a></div>
                 </div>
               </div>
                 <div class="col-sm-3">
@@ -437,16 +524,16 @@
                 <div class="col-sm-3">
                     <div class="widget">
                         <h5 class="widget-title font-alt">HAMBLER AVAILABLE ON</h5>
-                        <div class="text-center owl-carousel" data-items="2" data-pagination="false" data-navigation="false">
+                        <div id="owl-demo1" class="text-center owl-carousel">
                             <div class="col-sm-12">
-                                <div class="client-logo" style="width: 100px; position: relative">
+                                <div class="client-logo" style="width: 100px; position: relative; margin: 0 0 0 0">
                                     <a href="#">
                                         <img src="assets/image/footer/azw-logo.svg" alt="Amazon"/>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <div class="client-logo" style="width: 100px; position: relative">
+                                <div class="client-logo" style="width: 100px; position: relative; margin: 0 0 0 30px">
                                     <a href="#">
                                         <img src="assets/image/footer/fk-logo.svg" alt="Flipkart"/>
                                     </a>
@@ -458,7 +545,6 @@
               </div>
             </div>
           </div>
-        </div>
         <hr class="divider-d">
           <footer class="footer bg-dark">
               <div class="container">
@@ -477,8 +563,11 @@
                   </div>
               </div>
           </footer>
+        <div class="scroll-up">
+            <a href="#totop">
+                <i class="fa fa-angle-double-up"></i>
+            </a>
         </div>
-        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
       </main>
     
     <!--  
@@ -492,12 +581,37 @@
     <script src="assets/js/isotope.pkgd.js"></script>
     <script src="assets/js/imagesloaded.pkgd.js"></script>
     <script src="assets/js/jquery.flexslider.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/jquery.magnific-popup.js"></script>
     <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script src="assets/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        var owl = $("#owl-demo,#owl-demo1");
+
+        owl.owlCarousel({
+            items: 4, //10 items above 1000px browser width
+            itemsDesktop: [1000, 3], //5 items between 1000px and 901px
+            itemsDesktopSmall: [900, 2], // 3 items betweem 900px and 601px
+            itemsTablet: [600, 1], //2 items between 600 and 0;
+            itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+            touchDrag: true,
+            autoPlay: true,
+            mouseDrag: true,
+            responsiveRefreshRate: 200,
+            responsive: true,
+            paginationNumbers: false,
+            pagination: false,
+            stopOnHover: true,
+            slideSpeed: 200,
+            paginationSpeed: 200,
+        });
+    });
+    </script>
       
   </body>
 </html>

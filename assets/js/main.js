@@ -378,7 +378,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         /* ---------------------------------------------- /*
          * Owl Carousel
-         /* ---------------------------------------------- */
+         /* ---------------------------------------------- 
 
         $('.owl-carousel').each(function(i) {
 
@@ -415,7 +415,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 autoplay: 2000
             });
 
-        });
+        });*/
 
 
         /* ---------------------------------------------- /*
