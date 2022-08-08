@@ -68,8 +68,8 @@
             border-top: 1px dashed #D3D3D3;
         }
         
-        .main0 .text {border-radius: 10px; width: 550px; border: 1px solid #D3D3D3; margin: 10px 0 10px 0 }
-        .main0 .text1 {border-radius: 10px; width: 225px; border: 1px solid #D3D3D3; margin: 10px 0 10px 0 }
+        .main0 .text {border-radius: 10px; width: 90%; border: 1px solid #D3D3D3; margin: 10px 20px}
+        .main0 .text1 {border-radius: 10px; width: 90%; border: 1px solid #D3D3D3; margin: 10px 0 10px 0 }
         .dd_menu{border-radius: 10px; height: 35px; text-align: center; width: 225px; border: 1px solid #D3D3D3}
         .main0 sup{color: red;}
         .lbl{vertical-align: middle; text-align: left;}
@@ -200,9 +200,8 @@
                                          <h4>Firm Information</h4>
                                          <!-- Row Start -->
                                          <div class="row">
-                                             <label class="col-sm-3">Name<sup>*</sup></label>
-                                             <div class="col-sm-9">
-                                                 <input type="text" id="txt_fnm" class="text"/>
+                                             <div class="col-sm-12">
+                                                 <input type="text" id="txt_fnm" class="text" placeholder="Name" required/>
                                              </div>
                                          </div>
                                          <!-- Row End -->
@@ -231,17 +230,13 @@
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Pan No.<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<div class="row">
-												   <div class="col-sm-5">
-													  <input type="text" id="pannumber" class="text1"/>
+											 <div class="col-sm-12">
+												   <div class="col-sm-6">
+													  <input type="text" id="pannumber" class="text1" placeholder="Pan No." required/>
 												   </div>
-												   <label class="col-sm-2">GST:</label>
-												   <div class="col-sm-5">
-													  <input type="text" id="gstnumber" class="text1"/>
+												   <div class="col-sm-6">
+													  <input type="text" id="gstnumber" class="text1"  placeholder="GST No." required/>
 												   </div>
-												</div>
 											 </div>
 										  </div>
 										  <!-- Row End -->
@@ -274,32 +269,26 @@
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Name<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<input type="text" id="txt_name" class="text"/>
+											 <div class="col-sm-12">
+												<input type="text" id="txt_name" class="text" placeholder="Name" required/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Mobile No.<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<div class="row">
-												   <div class="col-sm-5">
-													  <input type="text" maxlength="10" onkeypress="return onlyAllowDigits(event);" id="txt_number" class="text1"/>
+											 <div class="col-sm-12">
+												   <div class="col-sm-6">
+													  <input type="number" maxlength="10" id="txt_number" class="text1" placeholder="Mobile No." required/>
 												   </div>
-												   <label class="col-sm-2">Landline #:</label>
-												   <div class="col-sm-5">
-                                                       <input type="text" id="landnumber" maxlength="12" class="text1"/></div>
-												</div>
+												   <div class="col-sm-6">
+                                                       <input type="number" id="landnumber" maxlength="12" class="text1" placeholder="Landline No."/></div>
 											 </div>
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">E-Mail<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<input type="text" id="trade_email" class="text"/>
+											 <div class="col-sm-12">
+												<input type="email" id="trade_email" class="text" placeholder="E-Mail" required/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
@@ -310,33 +299,22 @@
 										  <h4>Address Detail</h4>
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Address<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<textarea class="text" id="personaddress" style="min-height:50px;"></textarea>
+											 <div class="col-sm-12">
+												<textarea class="text" id="personaddress" style="min-height:50px;" placeholder="Address" required></textarea>
 											 </div>
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Pin Code<sup>*</sup></label>
-											 <div class="col-sm-9 col-md-5">
-												<input type="text" id="trade_pin" maxlength="6" onkeypress="return onlyAllowDigits(event);" class="text1"/>
+											 <div class="col-sm-12 col-md-3">
+												<input type="number" id="trade_pin" maxlength="6" class="text" placeholder="Pin Code" required/>
 											 </div>
-										  </div>
-										  <!-- Row End -->
-										  <!-- Row Start -->
-										  <div class="row">
-											 <label class="col-sm-3">State<sup>*</sup></label>
-											 <div class="col-sm-9 col-md-5">
-												<input type="text" id="state" class="text1"/>
+											 <div class="col-sm-12 col-md-3">
+												<input type="text" id="state" class="text" placeholder="State" required/>
 											 </div>
-										  </div>
-										  <!-- Row End -->
-										  <!-- Row Start -->
-										  <div class="row">
-											 <label class="col-sm-3">City<sup>*</sup></label>
-											 <div class="col-sm-9 col-md-5">
-												<input type="text" id="city" class="text1"/>
+
+											 <div class="col-sm-12 col-md-4">
+												<input type="text" id="city" class="text" placeholder="City" required/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
@@ -363,9 +341,8 @@
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
-										  <div class="row form-group">
-											 <label class="col-sm-3">No. of Sales Staff<sup>*</sup></label>
-											 <div class="col-sm-9">
+										  <div class="row col-sm-12">
+											 <div class="col-sm-6">
                                                  <select id="nooffsta" class="dd_menu">
                                                      <option value="0-20">Select Number of Staff</option>
                                                      <option value="0-20">0-20</option>
@@ -375,12 +352,8 @@
                                                      <option value="500+">500+</option>
                                                  </select>
 											 </div>
-										  </div>
-										  <!-- Row End -->
-										  <!-- Row Start  onkeypress="return onlyAllowDigitsOneLakh(event);"  -->
-										  <div class="row form-group">
-											 <label class="col-sm-3">Turnover (last fig.) Lakhs<sup>*</sup></label>
-											 <div class="col-sm-9">
+
+											 <div class="col-sm-6">
 												 <select id="turnover" class="dd_menu">
                                                      <option value="0-20">Select Last Annual Turnover</option>
                                                      <option value="0-20">0 - 25 Lakhs</option>
@@ -393,18 +366,16 @@
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
-										  <div class="row form-group">
-											 <label class="col-sm-3">Brands  Dealing with<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<input type="text" id="brands_dealing" class="text"/>
+										  <div class="row">
+											 <div class="col-sm-12">
+												<input type="text" id="brands_dealing" class="text" placeholder="Brands Dealing with" required/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
-										  <div class="row form-group">
-											 <label class="col-sm-3">Product Dealing with<sup>*</sup></label>
-											 <div class="col-sm-9">
-												<input type="text" id="products_dealingRs" class="text"/>
+										  <div class="row">
+											 <div class="col-sm-12">
+												<input type="text" id="products_dealingRs" class="text" placeholder="Product Dealing with" required/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
@@ -416,17 +387,15 @@
 										  <h4>Proposed Investment</h4>
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Investment</label>
-											 <div class="col-sm-9">
-												<input type="number" id="invest" maxlength="12" class="text1"/>
+											 <div class="col-sm-12">
+												<input type="number" id="invest" maxlength="12" class="text1" placeholder="Investment"/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Space Available (sq. ft.)</label>
-											 <div class="col-sm-9">
-												<input type="text" id="space" maxlength="12" class="text1"/>
+											 <div class="col-sm-12">
+												<input type="text" id="space" maxlength="12" class="text1" placeholder="Space Available (sq. ft.)"/>
 											 </div>
 										  </div>
 										  <!-- Row End -->
@@ -449,9 +418,8 @@
 										  <!-- Row End -->
 										  <!-- Row Start -->
 										  <div class="row">
-											 <label class="col-sm-3">Remark</label>
-											 <div class="col-sm-9">
-												<textarea class="text" id="remarks" style="min-height:50px;"></textarea>
+											 <div class="col-sm-12">
+												<textarea class="text" id="remarks" style="min-height:50px;" placeholder="Remark"></textarea>
 											 </div>
 										  </div>
 										  <!-- Row End -->
@@ -460,8 +428,8 @@
 
 									   <div class="row">
                                            <div style="text-align: center">
-                                               <input type="button" value="SUBMIT" onClick="chk_tradeform(); " id="tradeform-btn"/>
-                                               <input type="reset" value="CLEAR" style="margin-left:10px;"/>
+                                               <button type="submit" id="tradeform-btn">SUBMIT</button>
+                                               <button type="reset" style="margin-left:10px;">CLEAR</button>
                                            </div>
                                      </div>
                                      
