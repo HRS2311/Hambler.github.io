@@ -14,18 +14,6 @@
     =============================================
     -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
@@ -33,7 +21,6 @@
     <!--  
     Stylesheets
     =============================================
-    
     -->
     <!-- Default stylesheets-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -41,39 +28,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/flexslider.css" rel="stylesheet">
+    <link href="assets/css/simpletextrotator.css" rel="stylesheet">
+    <link href="assets/owl.carousel.css" rel="stylesheet">
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
-      
-    <style>
-        .main0
-        {
-            width: 800px;
-            margin: 50px 0 100px 150px;
-            vertical-align: middle;
-            border: 1px solid red;
-            border-radius: 15px;
-            padding: 12px;
-            font-size: 14px; 
-            font-weight: lighter;
-            box-shadow: 10px 10px lightblue;
-
-        }
-        
-        .main0 h4
-        {
-            color: blue;
-            border-top: 1px dashed #D3D3D3;
-        }
-        
+    <style type="text/css">
+        #custom-collapse li { font-size: 12px; font-family: 'Roboto'; }
+        #widget .widget-posts-title a { font-size: 15px; font-family: 'Roboto'; }  
+        .main0 { width: 800px; margin: 50px 0 100px 0; vertical-align: middle; border: 1px solid red; border-radius: 15px; padding: 12px; font-size: 14px; font-weight: lighter; box-shadow: 10px 10px lightblue; }
+        .main0 h4 { color: blue; border-top: 1px dashed #D3D3D3; }
         .main0 .text {border-radius: 10px; width: 90%; border: 1px solid #D3D3D3; margin: 10px 20px}
         .main0 .text1 {border-radius: 10px; width: 90%; border: 1px solid #D3D3D3; margin: 10px 0 10px 0 }
         .dd_menu{border-radius: 10px; height: 35px; text-align: center; width: 225px; border: 1px solid #D3D3D3}
         .main0 sup{color: red;}
         .lbl{vertical-align: middle; text-align: left;}
-      </style>  
+    </style>  
       
       
   </head>
@@ -490,7 +461,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="widget">
-                        <h5 class="widget-title font-alt">HAMBLER AVAILABLE ON</h5>
+                        <h5 class="widget-title font-alt">AVAILABLE ON</h5>
                         <div id="owl-demo1" class="text-center owl-carousel">
                             <div class="col-sm-12">
                                 <div class="client-logo" style="width: 100px; position: relative; margin: 0 0 0 0">
@@ -539,10 +510,36 @@
     <!--  
     JavaScripts
     =============================================
-    -->
+    --> 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/owl.carousel.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var owl = $("#owl-demo,#owl-demo1");
+        owl.owlCarousel({
+            items: 4, //10 items above 1000px browser width
+            itemsDesktop: [1000, 3], //5 items between 1000px and 901px
+            itemsDesktopSmall: [900, 2], // 3 items betweem 900px and 601px
+            itemsTablet: [600, 1], //2 items between 600 and 0;
+            itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+            touchDrag: true,
+            autoPlay: true,
+            mouseDrag: true,
+            responsiveRefreshRate: 200,
+            responsive: true,
+            paginationNumbers: false,
+            pagination: false,
+            stopOnHover: true,
+            slideSpeed: 200,
+            paginationSpeed: 200,
+        });
+    });
+    </script>
   </body>
 </html>
