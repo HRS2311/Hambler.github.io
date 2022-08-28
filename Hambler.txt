@@ -1,0 +1,56 @@
+Sections (Page HTML)
+
+Main Banner
+Categories (4)
+Treding Products (7)
+Brand Video
+Why Us
+Testimonial
+Blog
+Footer Bar
+
+
+Navigation
+
+Home
+Kitchen Appliances - MG/JMG, Chopper, Blender, Nutri Blender, Sandwich: Toaster, Griller, Jumbo, OTG, Egg Boiler, Babeque, Induction, Kettles
+Ceiling Fans
+Home Appliances - Heaters
+SS & Digital Bottles
+About us - Mission | Vission | Values | Why us
+Contact Us
+
+
+Footer
+1.1) Customer Support Link
+1.2) Product Registration Link
+1.3) FAQ
+2) T&C Link
+3) Privacy Link
+
+
+Side Hover
+1) Whats-app
+2) Calalogue
+3) App Download
+
+
+Pages
+1) Landing (HTML)
+2) About (HTML)
+3) Contact (HTML)
+4) Support - Customer Support Tab | Product Registration | Customer Feedback (HTML via whats app)
+https://www.codester.com/items/30341/whatsapp-message-form-send-form-data-to-whatsapp
+https://trickuweb.com/link-html-form-data-to-whatsapp.php
+
+5) T&C (HTML)
+6) Privacy (HTML)
+7) Career (HTML)
+8) Join Us (HTML)
+7) Category Level (2 Column with Decription & Manual) (ASP)
+
+Product Image
+Features
+Color Option
+Link to Ecommerce
+Manual
